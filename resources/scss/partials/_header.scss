@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../partials/variables";
+
+header {
+    nav {
+        font: 700 0.8rem "Roboto Condensed", sans-serif;
+        li {
+            a.nav-link {
+                text-transform: uppercase;
+                color: $darker;
+            }
+            .dropdown-toggle::after {
+                color: $primary !important;
+            }
+        }
+
+        .input-group {
+            border: none;
+            text-align: end;
+            border-bottom: 3px solid $primary;
+            width: 15%;
+            align-self: flex-end;
+
+            input {
+                border: none;
+                padding-right: 0;
+            }
+
+            [placeholder="Search"] {
+                text-align: right;
+                color: $darker;
+            }
+
+            span {
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}

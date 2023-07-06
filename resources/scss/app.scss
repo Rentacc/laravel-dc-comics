@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/bootstrap";
+@import "partials/variables";
+
+@import "partials/header";
+
+main {
+    #jumbotron {
+        height: 260px;
+        background: url("../img/jumbotron.jpg") top center/cover;
+    }
+
+    #current_series {
+        top: -40px;
+        left: 0;
+    }
+
+    img {
+        aspect-ratio: 1/1;
+    }
+}
+
+h4 {
+    color: $light;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary;
+}
+
+li {
+    list-style: none;
+}
+
+@import "partials/banner";
+
+@import "partials/footer";
